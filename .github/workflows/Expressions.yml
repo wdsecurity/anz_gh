@@ -1,0 +1,12 @@
+name: 7-expresions
+on:
+ workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conditional Step Using an Expression
+        run: |
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/master" ]]; then
+            echo "This is a push to the master branch."
+          fi
