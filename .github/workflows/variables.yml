@@ -1,5 +1,5 @@
 name: Using Variables
-on:  workflow_dispatch:
+on:  workflow_dispatch
 env:
   WORKFLOW_VAR: 'I am a workflow env var'
   OVERWRITTEN: 'I will be overwritten'
